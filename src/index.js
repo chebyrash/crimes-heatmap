@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import dataset from "./data"
 import {compose, withProps} from "recompose"
-import {withScriptjs, withGoogleMap, GoogleMap} from "react-google-maps"
+import {GoogleMap, withGoogleMap, withScriptjs} from "react-google-maps"
 import {HeatmapLayer} from "react-google-maps/lib/components/visualization/HeatmapLayer";
 
 /* global google */
 
 const KEY = "AIzaSyA8WPe64aRdjMzrWHdNinBY3Knc_qy6ci0";
+
 
 const MapComponent = compose(
     withProps({
